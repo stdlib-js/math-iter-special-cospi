@@ -1,0 +1,1 @@
+import t from"https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-tools-map@esm/index.mjs";import s from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-cospi@esm/index.mjs";var e=t,i=s;var r=function(t){return e(t,i)},m=r;export{m as default};
