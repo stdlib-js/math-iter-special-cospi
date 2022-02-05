@@ -40,8 +40,26 @@ limitations under the License.
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var iterCospi = require( '@stdlib/math-iter-special-cospi' );
+iterCospi = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-cospi@umd/bundle.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-cospi@umd/bundle.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.iterCospi;
+})()
+</script>
 ```
 
 #### iterCospi( iterator )
@@ -98,9 +116,14 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-iter-randu' );
-var iterCospi = require( '@stdlib/math-iter-special-cospi' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@umd/bundle.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-cospi@umd/bundle.js"></script>
+<script type="text/javascript">
+(function () {
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
@@ -120,6 +143,11 @@ while ( true ) {
     }
     console.log( r.value );
 }
+
+})()
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -201,6 +229,13 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 -->
 
+[umd]: https://github.com/umdjs/umd
+[es-module]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+
+[deno-url]: https://github.com/stdlib-js/math-iter-special-cospi/tree/deno
+[umd-url]: https://github.com/stdlib-js/math-iter-special-cospi/tree/umd
+[esm-url]: https://github.com/stdlib-js/math-iter-special-cospi/tree/esm
+
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
 [chat-url]: https://gitter.im/stdlib-js/stdlib/
 
@@ -214,9 +249,9 @@ Copyright &copy; 2016-2021. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/cospi]: https://github.com/stdlib-js/math-base-special-cospi
+[@stdlib/math/base/special/cospi]: https://github.com/stdlib-js/math-base-special-cospi/tree/umd
 
-[@stdlib/math/iter/special/cos]: https://github.com/stdlib-js/math-iter-special-cos
+[@stdlib/math/iter/special/cos]: https://github.com/stdlib-js/math-iter-special-cos/tree/umd
 
 <!-- </related-links> -->
 
