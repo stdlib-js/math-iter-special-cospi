@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterCospi from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-cospi@esm/index.mjs';
+import iterCospi from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-cospi@v0.2.2-esm/index.mjs';
 ```
 
 #### iterCospi( iterator )
@@ -116,7 +116,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-randu@esm/index.mjs';
-import iterCospi from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-cospi@esm/index.mjs';
+import iterCospi from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-cospi@v0.2.2-esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = randu({
